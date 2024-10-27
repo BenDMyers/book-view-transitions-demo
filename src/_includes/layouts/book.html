@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{{title}}, by {{author}}</title>
+	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📚</text></svg>">
+	<link rel="stylesheet" href="/css/book-3d.css">
+	<link rel="stylesheet" href="/css/page.css">
+</head>
+<body>
+	<nav>
+		<a href="/">Home</a>
+	</nav>
+	<header class="bifold">
+		<hgroup>
+			<h1>{{title}}</h1>
+			<p>by {{author}}</p>
+		</hgroup>
+		<div class="book-container" style="view-transition-name: {{ title | slugify}}; --book-rotation: -20deg;">
+			<div class="book">
+				<img alt="{{ title }}, by {{ author }}" src="{{ cover }}" />
+			</div>
+		</div>
+	</header>
+	<main>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil odit eveniet laboriosam, accusamus minima esse
+			minus modi expedita laudantium earum officiis aut possimus consequatur provident accusantium facere nobis.
+			Aspernatur, architecto.</p>
+	</main>
+</body>
+
+</html>
